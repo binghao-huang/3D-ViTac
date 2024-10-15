@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="3D Visuo-Tactile">
+  <meta name="author" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>3D Visuo-Tactile</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+
+<body>
+
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-2 publication-title">3D ViTac: Learning Fine-Grained Manipulation <br> with
+              Visuo-Tactile Sensing</h1>
+            <div class="is-size-5 publication-authors">
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="hero"></section>
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-2 publication-title">Dynamic Handover: <br> Throw and Catch with Bimanual Hands</h1>
+            <div class="is-size-5 publication-authors">
+
+              <span class="author-block">
+                <a href="https://binghao-huang.github.io/">Binghao Huang</a><sup>1</sup>,</span>
+              <span class="author-block">
+                <a href="https://wangyixuan12.github.io/">Yixuan Wang</a><sup>1</sup>,</span>
+              <span class="author-block">
+                <a href="">Xinyi Yang</a><sup>2</sup>,</span>
+              <span class="author-block">
+                <a href="https://yyueluo.com/">Yiyue Luo</a><sup>3</sup>,</span>
+              <span class="author-block">
+                <a href="https://yunzhuli.github.io/">Yunzhu Li</a><sup>1</sup>,</span> 
+              <span class="author-block">
+
+              </span>
+            </div>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block"><sup>1</sup>Columbia University,</span>
+              <span class="author-block"><sup>2</sup>University of Illinois Urbana-Champaign,</span>
+              <span class="author-block"><sup>3</sup>University of Washington</span>
+            </div>
+          </br>
+            <div class="is-size-6 publication-authors">
+              <span class="author-block"><sup>*</sup>Equal Contribution</span>
+              </br>
+              <span class="author-block">Conference on Robot Learning (CoRL) 2024</span>
+            </div>
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- PDF Link. -->
+                <span class="link-block">
+                  <a href="" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Paper</span>
+                  </a>
+                </span>
+                <span class="link-block">
+                  <a href="https://openreview.net/forum?id=bk28WlkqZn" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>arXiv</span>
+                  </a>
+                </span>
+                <!-- Video Link. -->
+                <span class="link-block">
+                  <a href="" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Poster</span>
+                  </a>
+                </span>
+                <span class="link-block">
+                  <a href="" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                    </span>
+                    <span>Video</span>
+                  </a>
+                </span>
+                <span class="link-block">
+                  <a href="" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-twitter"></i>
+                    </span>
+                    <span>Twitter</span>
+                  </a>
+                </span>
+                <!-- Code Link. -->
+                <span class="link-block">
+                  <a href="" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- <section class="additional comment"> -->
+  <div class="container">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-4">
+          Our Visuo-Tactile Policy can deal with fragile objects and precise in-hand manipulation! </h2>
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-full-width">
+            <h3 class="title is-4"></h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <section class="overall teaser">
+    <div class="container">
+      <div class="hero-body">
+        <video id="teaser_video" width=99% muted="false" autoplay loop style="border-radius:10px; ">
+          <source src="video/teaser.mp4" type="video/mp4">
+        </video>
+        </br>
+        </br>
+        <div class="columns is-centered has-text-centered">
+          <h2 class="title is-4">
+            The robot keeps retrying until it successfully grasps the grapes. </h2>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- <div class="container">
+      <div class="hero-body">
+        <video id="teaser_video" width=49.5% muted autoplay loop style="border-radius:10px; ">
+          <source src="" type="video/mp4">
+        </video>
+        <video id="teaser_video" width=49.5% muted autoplay loop style="border-radius:10px; ">
+          <source src="" type="video/mp4">
+        </video>
+      </div>
+    </div> -->
+
+
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <!-- Abstract. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-full-width">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              Tactile and visual perception are both crucial for humans to perform fine-grained interactions with their
+              environment. Developing similar multi-modal sensing capabilities for robots can significantly enhance and
+              expand their manipulation skills. This paper introduces <b>3D-ViTac</b>, a multi-modal sensing and
+              learning system designed for dexterous bimanual manipulation. Our system features tactile sensors equipped
+              with dense sensing units, each covering an area of 3 mm^2. These sensors are low-cost and flexible,
+              providing detailed and extensive coverage of physical contacts, effectively complementing visual
+              information.
+              To integrate tactile and visual data, we fuse them into a unified 3D representation space that preserves
+              their 3D structures and spatial relationships. The multi-modal representation can then be coupled with
+              diffusion policies for imitation learning. Through concrete hardware experiments, we demonstrate that even
+              low-cost robots can perform precise manipulations and significantly outperform vision-only policies,
+              particularly in safe interactions with fragile items and executing long-horizon tasks involving in-hand
+              manipulation.
+            </p>
+          </div>
+        </div>
+      </div>
+        <!-- <div class="hero-body">
+          <div class="columns is-centered has-text-centered">
+            <div class="column is-full-width">
+              <h2 class="title is-3">
+                Summmary Video</h2>
+                <video id="teaser_video" width=99% muted autoplay controls style="border-radius:10px; ">
+                  <source src="video/summary_video.mp4" type="video/mp4">
+                </video>
+            </div>
+            </div>
+        </div> -->
+    </div>
+  </section>
+
+  <section class="Physcial">
+    <div class="container">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-full-width">
+          <h2 class="title is-3"> Our Tactile Sensor Hardware </h2>
+        </div>
+      </div>
+      <div class="columns is-centered has-text-centered">
+        <div class="column">
+          <h2 class="title is-5"> Tactile Hardware Introduction </h2>
+          <div class="columns is-centered">
+            <div class="column content">
+              <video playsinline="" autoplay="" loop="" preload="" muted="" width="100%" style="border-radius:10px; ">
+                <source src="video/sensor test 1.mp4" type="video/mp4" />
+              </video>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <h2 class="title is-5"> Load Test and Flexibility </h2>
+          <div class="columns is-centered">
+            <div class="column content">
+              <video playsinline="" autoplay="" loop="" preload="" muted="" width="100%" style="border-radius:10px; ">
+                <source src="video/sensor test 2.mp4" type="video/mp4" />
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <br>
+  <br>
+  <section class="videos">
+    <div class="container">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-full-width">
+          <h2 class="title is-3">Policy Rollout and Visuo-Tactile Representation</h2>
+        </div>
+      </div>
+
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-full-width">
+          <h2 class="title is-4">Tasks Requiring Fine-Grained Force Information</h2>
+        </div>
+      </div>
+
+      <div class="columns is-centered has-text-centered">
+        <div class="column">
+          <!-- <h2 class="title is-5"> Moving Objects </h2> -->
+          <div class="columns is-centered">
+            <div class="column content">
+              <video playsinline="" autoplay="" loop="" preload="" muted="" width="100%" style="border-radius:10px; ">
+                <source src="video/egg merge demo2.mp4" type="video/mp4" />
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="columns is-centered has-text-centered">
+        <div class="column">
+          <div class="columns is-centered">
+            <div class="column content">
+              <video playsinline="" autoplay="" loop="" preload="" muted="" width="100%" style="border-radius:10px; ">
+                <source src="video/fruit merge.mp4" type="video/mp4" />
+              </video>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-full-width">
+          <h2 class="title is-4">Tasks Requiring In-Hand State Information</h2>
+        </div>
+      </div>
+
+      <div class="columns is-centered has-text-centered">
+        <div class="column">
+          <!-- <h2 class="title is-5"> Terrain </h2> -->
+          <div class="columns is-centered">
+            <div class="column content">
+              <video playsinline="" autoplay="" loop="" preload="" muted="" width="100%" style="border-radius:10px; ">
+                <source src="video/hex merge.mp4" type="video/mp4" />
+              </video>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="columns is-centered has-text-centered">
+        <div class="column">
+          <div class="columns is-centered">
+            <div class="column content">
+              <video playsinline="" autoplay="" loop="" preload="" muted="" width="100%" style="border-radius:10px; ">
+                <source src="video/serving merge.mp4" type="video/mp4" />
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+
+
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-full-width">
+          <h2 class="title is-3">Our Visuo-Tactile Points Visualization
+          </h2>
+        </div>
+      </div>
+
+      <div class="columns is-centered has-text-centered">
+        
+        <div class="column">
+          <h2 class="title is-5"> Real Environment</h2>
+          <div class="columns is-centered">
+            <picture class="image">
+              <img alt="" src="video/image.png" width="100%" style="border-radius:10px; ">
+            </picture>
+          </div>
+        </div>
+
+        <div class="column">
+          <h2 class="title is-5"> Visuo-Tactile Points</h2>
+          <div class="columns is-centered">
+            <div class="column has-text-centered">
+              <iframe id="interactive-html-1" src="video/tactile_340.html" width=650pt height=500pt frameborder="0"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <br>
+
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-full-width">
+          <h2 class="title is-3">Comparison with Baselines</h2>
+        </div>
+      </div>
+
+      <div class="columns is-centered has-text-centered">
+        <div class="column">
+          <h2 class="title is-5"> Ours: Continuning Retrying to Grasp the Egg </h2>
+          <div class="columns is-centered">
+            <div class="column content">
+              <video playsinline="" autoplay="" loop="" preload="" muted="" width="100%" style="border-radius:10px; ">
+                <source src="video/egg ours compare.mp4" type="video/mp4" />
+              </video>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <h2 class="title is-5"> Baselines: Moving next goal w/o Egg</h2>
+          <div class="columns is-centered">
+            <div class="column content">
+              <video playsinline="" autoplay="" loop="" preload="" muted="" width="100%" style="border-radius:10px; ">
+                <source src="video/egg wo tactile.mp4" type="video/mp4" />
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="columns is-centered has-text-centered">
+        <div class="column">
+          <h2 class="title is-5"> Ours: Safely Grasp Fruit </h2>
+          <div class="columns is-centered">
+            <div class="column content">
+              <video playsinline="" autoplay="" loop="" preload="" muted="" width="100%" style="border-radius:10px; ">
+                <source src="video/fruit ours compare.mp4" type="video/mp4" />
+              </video>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <h2 class="title is-5"> Baselines: Broken when Grasp Multiple Ones</h2>
+          <div class="columns is-centered">
+            <div class="column content">
+              <video playsinline="" autoplay="" loop="" preload="" muted="" width="100%" style="border-radius:10px; ">
+                <source src="video/fruit wo tactile.mp4" type="video/mp4" />
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="columns is-centered has-text-centered">
+        <div class="column">
+          <h2 class="title is-5"> Ours: Success In-hand Adjustment</h2>
+          <div class="columns is-centered">
+            <div class="column content">
+              <video playsinline="" autoplay="" loop="" preload="" muted="" width="100%" style="border-radius:10px; ">
+                <source src="video/hex ours compare.mp4" type="video/mp4" />
+              </video>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <h2 class="title is-5"> Baselines: Fail In-Hand Adjustment</h2>
+          <div class="columns is-centered">
+            <div class="column content">
+              <video playsinline="" autoplay="" loop="" preload="" muted="" width="100%" style="border-radius:10px; ">
+                <source src="video/hex wo tactile.mp4" type="video/mp4" />
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="columns is-centered has-text-centered">
+        <div class="column">
+          <h2 class="title is-5"> Ours: Success after Passive Reorientation</h2>
+          <div class="columns is-centered">
+            <div class="column content">
+              <video playsinline="" autoplay="" loop="" preload="" muted="" width="100%" style="border-radius:10px; ">
+                <source src="video/serving ours compare.mp4" type="video/mp4" />
+              </video>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <h2 class="title is-5"> Baselines: Bad Placing Motion</h2>
+          <div class="columns is-centered">
+            <div class="column content">
+              <video playsinline="" autoplay="" loop="" preload="" muted="" width="100%" style="border-radius:10px; ">
+                <source src="video/serving wo tactile.mp4" type="video/mp4" />
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <br>
+      <br>
+
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-full-width">
+          <h2 class="title is-3">Comparison with RGB w/ Tactile Image Baselines <span style="color: #CC0000">(Rebuttal)</span></h2>
+        </div>
+      </div>
+
+      <div class="columns is-centered has-text-centered">
+        <div class="column">
+          <h2 class="title is-5"> RGB w/ Tactile: Fail to Adjust Precisely(Failure)</h2>
+          <div class="columns is-centered">
+            <div class="column content">
+              <video playsinline="" autoplay="" loop="" preload="" muted="" width="100%" style="border-radius:10px; ">
+                <source src="video/rebuttal/rgb tactile hex fail.mp4" type="video/mp4" />
+              </video>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <h2 class="title is-5"> RGB w/ Tactile: Fail to Adjust Precisely(Success)</h2>
+          <div class="columns is-centered">
+            <div class="column content">
+              <video playsinline="" autoplay="" loop="" preload="" muted="" width="100%" style="border-radius:10px; ">
+                <source src="video/rebuttal/rgb tactile hex sr.mp4" type="video/mp4" />
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="columns is-centered has-text-centered">
+        <div class="column">
+          <h2 class="title is-5"> RGB w/ Tactile: Fail to Generalize to New Objects with Different Color</h2>
+          <div class="columns is-centered">
+            <div class="column content">
+              <video playsinline="" autoplay="" loop="" preload="" muted="" width="100%" style="border-radius:10px; ">
+                <source src="video/rebuttal/rgb tactile hex red.mp4" type="video/mp4" />
+              </video>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <h2 class="title is-5"> Ours: Generalize to Objects with Slightly different Geometry (Size)</h2>
+          <div class="columns is-centered">
+            <div class="column content">
+              <video playsinline="" autoplay="" loop="" preload="" muted="" width="100%" style="border-radius:10px; ">
+                <source src="video/rebuttal/ours hex red.mp4" type="video/mp4" />
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-full-width">
+          <h2 class="title is-3">Typical Failure Cases of Baselines </h2>
+        </div>
+      </div>
+      <div class="columns is-centered">
+        <div class="column content">
+          <picture width="99%" style="border-radius:10px; ">
+            <img src="static/img/failure_case.png">
+          </picture>
+        </div>
+      </div>
+
+
+
+
+    </div>
+  </section>
+
+
+  <br>
+  <br>
+  <section class="videos">
+    <div class="container">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Comparison of Fine-grained Single Arm Tasks</h2>
+        </h2>
+        <h3 class="title is-3">Light Bulb Retrieval</h2>
+        </h3>
+        <div class="columns is-centered has-text-centered">
+          <div class="column">
+            <h2 class="title is-5"> Point Cloud Only: Fail to Rotate Effectively</h2>
+            <div class="columns is-centered">
+              <div class="column content">
+                <video playsinline="" autoplay="" loop="" preload="" muted="" width="100%" style="border-radius:10px; ">
+                  <source src="video/rebuttal/raw pc bulb.mp4" type="video/mp4" />
+                </video>
+              </div>
+            </div>
+          </div>
+
+          <div class="column">
+            <h2 class="title is-5"> RGB Only: Get Stuck for Long Time</h2>
+            <div class="columns is-centered">
+              <div class="column content">
+                <video playsinline="" autoplay="" loop="" preload="" muted="" width="100%" style="border-radius:10px; ">
+                  <source src="video/rebuttal/rgb only bulb.mp4" type="video/mp4" />
+                </video>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="columns is-centered has-text-centered">
+          <div class="column">
+            <h2 class="title is-5"> Ours: Successfully Rotate Multiple Times</h2>
+            <div class="columns is-centered">
+              <div class="column content">
+                <video playsinline="" autoplay="" loop="" preload="" muted="" width="100%" style="border-radius:10px; ">
+                  <source src="video/rebuttal/ours bulb sr.mp4" type="video/mp4" />
+                </video>
+              </div>
+            </div>
+          </div>
+
+          <div class="column">
+            <h2 class="title is-5"> Ours: Successfully Rotate Multiple Times</h2>
+            <div class="columns is-centered">
+              <div class="column content">
+                <video playsinline="" autoplay="" loop="" preload="" muted="" width="100%" style="border-radius:10px; ">
+                  <source src="video/rebuttal/ours bulb sr2.mp4" type="video/mp4" />
+                </video>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full-width">
+        <h3 class="title is-3">Peg Insertion</h2>
+        </h3>
+        <div class="columns is-centered has-text-centered">
+          <div class="column">
+            <h2 class="title is-5"> Point Cloud Only: Get Stuck</h2>
+            <div class="columns is-centered">
+              <div class="column content">
+                <video playsinline="" autoplay="" loop="" preload="" muted="" width="100%" style="border-radius:10px; ">
+                  <source src="video/rebuttal/raw pc insertion stuck.mp4" type="video/mp4" />
+                </video>
+              </div>
+            </div>
+          </div>
+
+          <div class="column">
+            <h2 class="title is-5"> RGB Only: Get Stuck</h2>
+            <div class="columns is-centered">
+              <div class="column content">
+                <video playsinline="" autoplay="" loop="" preload="" muted="" width="100%" style="border-radius:10px; ">
+                  <source src="video/rebuttal/rgb insertion stuck.mp4" type="video/mp4" />
+                </video>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="columns is-centered has-text-centered">
+          <div class="column">
+            <h2 class="title is-5"> Ours: Continune Adjust to Insert</h2>
+            <div class="columns is-centered">
+              <div class="column content">
+                <video playsinline="" autoplay="" loop="" preload="" muted="" width="100%" style="border-radius:10px; ">
+                  <source src="video/rebuttal/ours insertion sr.mp4" type="video/mp4" />
+                </video>
+              </div>
+            </div>
+          </div>
+
+          <div class="column">
+            <h2 class="title is-5"> Ours: React to Regrasp and Adjust</h2>
+            <div class="columns is-centered">
+              <div class="column content">
+                <video playsinline="" autoplay="" loop="" preload="" muted="" width="100%" style="border-radius:10px; ">
+                  <source src="video/rebuttal/ours insertion react.mp4" type="video/mp4" />
+                </video>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!-- <div class="columns is-centered has-text-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">More Policy Rollout: Fine-grained Single Arm Tasks</h2>
+        </h2>
+
+        <div class="columns is-centered has-text-centered">
+          <div class="column">
+            <h2 class="title is-5"> Retrieve Light Bulb</h2>
+            <div class="columns is-centered">
+              <div class="column content">
+                <video playsinline="" autoplay="" loop="" preload="" muted="" width="100%" style="border-radius:10px; ">
+                  <source src="video/bulb.mp4" type="video/mp4" />
+                </video>
+              </div>
+            </div>
+          </div>
+
+          <div class="column">
+            <h2 class="title is-5"> Fruit Collection</h2>
+            <div class="columns is-centered">
+              <div class="column content">
+                <video playsinline="" autoplay="" loop="" preload="" muted="" width="100%" style="border-radius:10px; ">
+                  <source src="video/fruit new.mp4" type="video/mp4" />
+                </video>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="columns is-centered has-text-centered">
+          <div class="column">
+            <h2 class="title is-5"> Insertion</h2>
+            <div class="columns is-centered">
+              <div class="column content">
+                <video playsinline="" autoplay="" loop="" preload="" muted="" width="100%" style="border-radius:10px; ">
+                  <source src="video/insertion 1.mp4" type="video/mp4" />
+                </video>
+              </div>
+            </div>
+          </div>
+
+          <div class="column">
+            <h2 class="title is-5"> Insertion</h2>
+            <div class="columns is-centered">
+              <div class="column content">
+                <video playsinline="" autoplay="" loop="" preload="" muted="" width="100%" style="border-radius:10px; ">
+                  <source src="video/insertion 2.mp4" type="video/mp4" />
+                </video>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div> -->
+
+    <br>
+    <br>
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Human Interference Test</h2>
+        </h2>
+      </div>
+    </div>
+
+    <div class="columns is-centered has-text-centered">
+      <div class="column">
+        <div class="columns is-centered">
+          <div class="column content">
+            <video playsinline="" autoplay="" loop="" preload="" muted="" width="100%" style="border-radius:10px; ">
+              <source src="video/human 1.mp4" type="video/mp4" />
+            </video>
+          </div>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="columns is-centered">
+          <div class="column content">
+            <video playsinline="" autoplay="" loop="" preload="" muted="" width="100%" style="border-radius:10px; ">
+              <source src="video/human 2.mp4" type="video/mp4" />
+            </video>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Special Task</h2>
+        <h3> We collect the data that we keep trying to grasp the only single grape in the bag, and we can see the
+          policy could regrasp until there is only one single grape in hand.</h3>
+
+          <!-- <div class="hero-body"> -->
+          <video id="teaser_video" width=99% muted autoplay loop style="border-radius:10px; ">
+            <source src="video/special task.mp4" type="video/mp4">
+          </video>
+
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+  </section>
+
+<section>
+
+
+
+
+</section>
+
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+            <p>
+              This website template is borrowed from <a href="https://github.com/nerfies/nerfies.github.io">Here</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
