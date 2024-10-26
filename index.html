@@ -41,8 +41,14 @@
         <div class="columns is-centered">
           <div class="column has-text-centered">
             <div class="is-size-5 publication-authors">
-              <h1 class="title is-2 publication-title">3D ViTac: Learning Fine-Grained Manipulation <br> with
-                Visuo-Tactile Sensing</h1>
+              <h1 style="text-align: center; margin-bottom: 0; font-size: 300%">
+                <span style="color: #46b1f0;">3D Vi</span><span style="color: #9b59b6;">Tac</span>
+              </h1>
+            
+              <h1 class="title is-2 publication-title">Learning Fine-Grained Manipulation with </br>
+                <span style="color: #46b1f0;">Visuo</span>-<span style="color: #9b59b6;">Tactile</span> Sensing
+            </h1>
+            
               <span class="author-block">
                 <a href="https://binghao-huang.github.io/">Binghao Huang</a><sup>1</sup>,</span>
               <span class="author-block">
@@ -72,7 +78,7 @@
               <div class="publication-links">
                 <!-- PDF Link. -->
                 <span class="link-block">
-                  <a href="" class="external-link button is-normal is-rounded is-dark">
+                  <a href="https://openreview.net/forum?id=bk28WlkqZn" class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fas fa-file-pdf"></i>
                     </span>
@@ -80,7 +86,7 @@
                   </a>
                 </span>
                 <span class="link-block">
-                  <a href="https://openreview.net/forum?id=bk28WlkqZn" class="external-link button is-normal is-rounded is-dark">
+                  <a href="" class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="ai ai-arxiv"></i>
                     </span>
@@ -220,9 +226,12 @@
     <div class="container">
       <div class="columns is-centered has-text-centered">
         <div class="column is-full-width">
-          <h2 class="title is-3"> Our Tactile Sensor Hardware </h2>
+          <h2 class="title is-3">Tactile Sensor Hardware Design</h2>
+          <h5 class="title is-5" style="color: grey;"> (Hardware Tutorial Coming Soon)</h5>
+
         </div>
       </div>
+      
       <div class="columns is-centered has-text-centered">
         <div class="column">
           <h2 class="title is-5"> Tactile Hardware Introduction </h2>
@@ -248,9 +257,38 @@
       </div>
     </div>
   </section>
-
-
   <br>
+  <section class="Physcial"></section>
+    <div class="container">
+  <div class="columns is-centered has-text-centered">
+    <div class="column is-full-width">
+      <h2 class="title is-3">Visuo-Tactile Points Representation
+      </h2>
+      The <span style="color: #3D85C6"><b>blue points</b></span> are observed by camera while the <span style="color: #9b59b6"> <b>purple points</bb></span> are tactile points. The points are projected into the same 3D space for policy learning.
+    </div>
+  </div>
+
+  <div class="columns is-centered has-text-centered">
+    <div class="column">
+      <h2 class="title is-5"> Real Environment</h2>
+      <div class="columns is-centered">
+        <picture class="image">
+          <img alt="" src="video/image.png" width="100%" style="border-radius:10px; ">
+        </picture>
+      </div>
+    </div>
+
+    <div class="column">
+      <h2 class="title is-5"> Visuo-Tactile Points</h2>
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <iframe id="interactive-html-1" src="video/tactile_340.html" width=650pt height=500pt frameborder="0"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+  </section>
+
   <br>
   <section class="videos">
     <div class="container">
@@ -326,39 +364,17 @@
       <br>
 
 
+
+
       <div class="columns is-centered has-text-centered">
         <div class="column is-full-width">
-          <h2 class="title is-3">Our Visuo-Tactile Points Visualization
-          </h2>
+          <h2 class="title is-3">Policy Robustness: Comparison with Baselines</h2>
         </div>
       </div>
 
       <div class="columns is-centered has-text-centered">
-        
-        <div class="column">
-          <h2 class="title is-5"> Real Environment</h2>
-          <div class="columns is-centered">
-            <picture class="image">
-              <img alt="" src="video/image.png" width="100%" style="border-radius:10px; ">
-            </picture>
-          </div>
-        </div>
-
-        <div class="column">
-          <h2 class="title is-5"> Visuo-Tactile Points</h2>
-          <div class="columns is-centered">
-            <div class="column has-text-centered">
-              <iframe id="interactive-html-1" src="video/tactile_340.html" width=650pt height=500pt frameborder="0"></iframe>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <br>
-
-      <div class="columns is-centered has-text-centered">
         <div class="column is-full-width">
-          <h2 class="title is-3">Comparison with Baselines</h2>
+          <h2 class="title is-4">Comparison with w/ Tactile and w/o Tactile </h2>
         </div>
       </div>
 
@@ -387,6 +403,8 @@
       </div>
 
 
+
+      
       <div class="columns is-centered has-text-centered">
         <div class="column">
           <h2 class="title is-5"> Ours: Safely Grasp Fruit </h2>
@@ -461,11 +479,10 @@
 
 
       <br>
-      <br>
 
       <div class="columns is-centered has-text-centered">
         <div class="column is-full-width">
-          <h2 class="title is-3">Comparison with RGB w/ Tactile Image Baselines <span style="color: #CC0000">(Rebuttal)</span></h2>
+          <h2 class="title is-4">Comparison with RGB w/ Tactile Image Baselines </h2>
         </div>
       </div>
 
@@ -530,12 +547,91 @@
         </div>
       </div>
 
-
-
-
     </div>
   </section>
 
+
+  <div class="columns is-centered has-text-centered">
+    <div class="column is-full-width">
+      <h2 class="title is-3">Policy Robustness: Comparison with Baselines</h2>
+    </div>
+  </div>
+  
+  <!-- First two videos displayed by default -->
+  <div class="columns is-centered has-text-centered">
+    <div class="column">
+      <h2 class="title is-5">Ours: Continuing Retrying to Grasp the Egg</h2>
+      <div class="columns is-centered">
+        <div class="column content">
+          <video playsinline autoplay loop preload muted width="100%" style="border-radius:10px;">
+            <source src="video/egg ours compare.mp4" type="video/mp4" />
+          </video>
+        </div>
+      </div>
+    </div>
+  
+    <div class="column">
+      <h2 class="title is-5">Baselines: Moving next goal w/o Egg</h2>
+      <div class="columns is-centered">
+        <div class="column content">
+          <video playsinline autoplay loop preload muted width="100%" style="border-radius:10px;">
+            <source src="video/egg wo tactile.mp4" type="video/mp4" />
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Collapsible Panel for More Videos -->
+  <div class="panel-group align-items-center" id="accordion" role="tablist" aria-multiselectable="true">
+    <div class="panel">
+      <div class="columns is-centered">
+        <div class="panel-heading column is-one-third" role="tab" id="more-demonstration">
+          <h4 class="panel-title has-text-centered">
+            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne"
+               aria-expanded="true" aria-controls="collapseOne">
+              More Point Cloud Policy Visualization
+            </a>
+          </h4>
+        </div>
+      </div>
+  
+      <!-- Additional Videos Hidden by Default -->
+      <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="more-demonstration">
+        <div class="panel-body">
+          
+          <!-- Additional video sections -->
+          <div class="columns is-centered has-text-centered">
+            <div class="column">
+              <h2 class="title is-5">Ours: Safely Grasp Fruit</h2>
+              <div class="columns is-centered">
+                <div class="column content">
+                  <video playsinline autoplay loop preload muted width="100%" style="border-radius:10px;">
+                    <source src="video/fruit ours compare.mp4" type="video/mp4" />
+                  </video>
+                </div>
+              </div>
+            </div>
+  
+            <div class="column">
+              <h2 class="title is-5">Baselines: Broken when Grasp Multiple Ones</h2>
+              <div class="columns is-centered">
+                <div class="column content">
+                  <video playsinline autoplay loop preload muted width="100%" style="border-radius:10px;">
+                    <source src="video/fruit wo tactile.mp4" type="video/mp4" />
+                  </video>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Add more videos as needed here following the same format -->
+  
+        </div>
+      </div>
+    </div>
+  </div>
+  
 
   <br>
   <br>
