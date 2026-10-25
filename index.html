@@ -42,11 +42,16 @@
             <i class="fas fa-home"></i>
         </span>
         </a>
+        <a class="navbar-item" href="#flexitac-v2">
+          <span class="tag is-link is-light is-rounded" style="font-weight: 700; margin-right: 0.5em;">New</span>
+          FlexiTac-V2 Sensor
+        </a>
         <div class="navbar-item has-dropdown is-hoverable">
           <a class="navbar-link">
             More Related Research
           </a>
           <div class="navbar-dropdown">
+            <a class="navbar-item" href="https://flexitac.github.io/" target="_blank">FlexiTac</a>
             <a class="navbar-item" href="https://binghao-huang.github.io/vt_refine/" target="_blank">VT-Refine</a>
             <a class="navbar-item" href="https://binghao-huang.github.io/touch_in_the_wild/" target="_blank">Touch in the Wild</a>
           </div>
@@ -149,6 +154,11 @@
                 </span>
               </div>
             </div>
+            <p style="margin-top: 0.75rem;">
+              <span class="tag is-link is-light is-rounded" style="font-weight: 700; margin-right: 0.4em;">New</span>
+              Building the tactile sensor? Try <a href="#flexitac-v2"><b>FlexiTac-V2</b></a>, our upgraded design:
+              ~3 min fabrication, $2.5 per sensor piece.
+            </p>
           </div>
         </div>
       </div>
@@ -233,6 +243,116 @@
       <div class="columns is-centered has-text-centered">
         <div class="column is-full-width">
           <h2 class="title is-3">Tactile Sensor Hardware Design</h2>
+        </div>
+      </div>
+    </div>
+
+    <!-- FlexiTac-V2: the next-generation sensor, pointing visitors to the FlexiTac project -->
+    <div class="container" id="flexitac-v2" style="scroll-margin-top: 1rem;">
+      <div class="box" style="padding: 2.4rem 2rem; border-radius: 18px; margin: 0.5rem 0 3rem 0;">
+        <div class="columns is-centered">
+          <div class="column is-10 has-text-centered">
+            <div style="display: inline-block; padding: 0.42rem 0.9rem; border-radius: 999px; background: rgba(47,111,237,0.08); color: #2f6fed; font-weight: 700; font-size: 0.9rem; margin-bottom: 1rem;">
+              New Hardware
+            </div>
+            <h3 class="title is-2 is-size-3-mobile" style="margin-bottom: 0.65rem; letter-spacing: -0.03em;">
+              FlexiTac-V2
+            </h3>
+            <p style="font-size: 1.2rem; color: #8a94a6; font-weight: 600; margin-bottom: 0.85rem;">
+              Fabrication time: ~3 mins
+            </p>
+            <div style="width: 72px; height: 3px; background: linear-gradient(90deg, #2f6fed, #8bb2ff); border-radius: 999px; margin: 0 auto 1rem auto;"></div>
+            <p style="color: #617086; font-size: 1.08rem; line-height: 1.75; margin: 0 auto; max-width: 760px;">
+              The tactile sensor used in 3D-ViTac is now called <b>FlexiTac-V1</b>. For new builds we recommend
+              <b>FlexiTac-V2</b>, our FPC-based redesign: about 10× faster to fabricate, half the cost per sensor piece, and a finer grid.
+            </p>
+            <div class="table-container" style="margin-top: 1.25rem;">
+              <table class="table is-narrow" style="margin: 0 auto; font-size: 0.95rem;">
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th><span style="white-space: nowrap;">FlexiTac-V1</span><br><span style="font-weight: 500; color: #8a94a6;">(used in 3D-ViTac)</span></th>
+                    <th style="color: #2f6fed; white-space: nowrap;">FlexiTac-V2</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr><td>Fabrication time</td><td>~30 mins</td><td><b>~3 mins</b></td></tr>
+                  <tr><td>Sensing grid</td><td>3 mm</td><td><b>2 mm</b></td></tr>
+                  <tr><td>Resolution</td><td>16×16</td><td><b>32×12</b></td></tr>
+                  <tr><td>Cost per sensor piece</td><td>$5</td><td><b>$2.5</b></td></tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="buttons is-centered" style="margin-top: 1.25rem;">
+              <a href="https://flexitac.github.io/#hardware-v2" target="_blank" rel="noopener"
+                class="button is-normal is-rounded is-dark">
+                <span class="icon"><i class="fas fa-globe"></i></span>
+                <span>FlexiTac Website</span>
+              </a>
+              <a href="https://github.com/FlexiTac/FlexiTac_Hardware_Repo" target="_blank" rel="noopener"
+                class="button is-normal is-rounded is-light">
+                <span class="icon"><i class="fab fa-github"></i></span>
+                <span>Hardware Repo</span>
+              </a>
+              <a href="https://docs.google.com/document/d/1bvz6AL7BUkhj4Dj7n9DFXTjnGIX4-ziN8-smiCKpVZU/edit?tab=t.0#heading=h.kk7d14qme9db"
+                target="_blank" rel="noopener" class="button is-normal is-rounded is-light">
+                <span class="icon"><i class="fas fa-tools"></i></span>
+                <span>Hardware Tutorial</span>
+              </a>
+              <a href="https://arxiv.org/abs/2604.28156" target="_blank" rel="noopener"
+                class="button is-normal is-rounded is-light">
+                <span class="icon"><i class="ai ai-arxiv"></i></span>
+                <span>FlexiTac Paper</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="columns is-variable is-5 is-centered" style="margin-top: 1rem;">
+          <div class="column is-6">
+            <h4 class="title is-5 has-text-centered">FlexiTac-V2 Hardware</h4>
+            <img src="static/img/flexitac_v2.jpg" loading="lazy"
+              alt="FlexiTac-V2 tactile sensor connected to its reading board and an Arduino Nano by flexible flat cables, mounted on a soft gripper"
+              style="display: block; width: 100%; max-height: 380px; object-fit: contain; border-radius: 10px;">
+          </div>
+          <div class="column is-6">
+            <h4 class="title is-5 has-text-centered">Hardware Tutorial Preview</h4>
+            <div style="border-radius: 10px; overflow: hidden; border: 1px solid rgba(18,32,51,0.08);">
+              <iframe src="https://docs.google.com/document/d/1bvz6AL7BUkhj4Dj7n9DFXTjnGIX4-ziN8-smiCKpVZU/preview"
+                title="FlexiTac hardware fabrication guide" width="100%" height="380" style="border: 0; display: block;"
+                loading="lazy"></iframe>
+            </div>
+          </div>
+        </div>
+
+        <div class="columns is-centered has-text-centered">
+          <div class="column">
+            <h4 class="title is-5">
+              Teleoperation Demo 1<br>
+              <span style="font-size: 0.9em; font-weight: 500; color: #7c8086;">Force Feedback with FlexiTac</span>
+            </h4>
+            <video width=99% muted autoplay loop controls playsinline style="border-radius:10px; ">
+              <source src="video/flexitac_v2_demo_1.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="column">
+            <h4 class="title is-5">
+              Teleoperation Demo 2<br>
+              <span style="font-size: 0.9em; font-weight: 500; color: #7c8086;">Cable Routing with FlexiTac</span>
+            </h4>
+            <video width=99% muted autoplay loop controls playsinline style="border-radius:10px; ">
+              <source src="video/flexitac_v2_demo_2.mp4" type="video/mp4" />
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-full-width">
+          <h3 class="title is-4" style="margin-bottom: 0.4rem;">Original 3D-ViTac Sensor (FlexiTac-V1)</h3>
+          <p style="color: #8a94a6;">The sensor used in this paper's experiments. Fabrication time: ~30 mins.</p>
         </div>
       </div>
     </div>
